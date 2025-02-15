@@ -1,6 +1,9 @@
 //brush.h programmed by hunter manko
 #include "stdafx.h"
 
+#ifndef BRUSH_H
+#define BRUSH_H
+
 class Brush{
     public:
 
@@ -28,3 +31,5 @@ class Brush{
     void BrushRenderBuild( Brush& brush );
 
 };
+
+#endif
