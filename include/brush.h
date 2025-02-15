@@ -5,8 +5,7 @@
 #define BRUSH_H
 
 class Brush{
-    public:
-
+public:
     Brush();
      ~Brush();
 
@@ -29,6 +28,49 @@ class Brush{
     };
 
     void BrushRenderBuild( Brush& brush );
+
+    double m_MaxBrushWorldCoord;
+    double m_MinBrushWorldCoord;
+
+    std::string BrushNameType; //static_cast<char>(BrushNameType);
+
+    int m_WorldSignalBrush;
+    int Brush_GroupType;
+    int BrushId;
+
+    void Brush_SetEpair(Brush * brush, const char * pKey, const char * pValue);
+
+    void Brush_SignalMaxSize(Brush& brush){
+        std::size_t g_nWorldBrushMax();
+    };
+
+    class Side{
+        public:
+        Side();
+         ~Side();
+
+         int side[6];
+
+        enum{ 
+            BrushTop = 0x0,
+            BrushBottom = 0x1,
+            BrushFront = 0x2,
+            BrushBack = 0x3,
+            BrushLeft = 0x4,
+            BrushRight = 0x5
+        }BrushSide;
+
+        virtual void BrushSideTexture(Brush * brush, Side * side, const char * pTexture);
+
+    };
+
+    #define BRUSH_DEBUG_POINTS 000
+
+ class _BrushQEData{
+ public:
+    _BrushQEData();
+     ~_BrushQEData();
+ };
 
 };
 
