@@ -6,6 +6,7 @@
 #include "plane.h"
 #include "stdafx.h"
 #include "cmdlib.h"
+#include "coord.h"
 
 int m_PlaneId = 0;
 
@@ -16,15 +17,7 @@ int points[3];
 
 Plane::Plane(){
     eBooleanModule Plane_DrawConcave;
-}
+};
 
-void Plane::PlaneNormal(){
-    normal >= normal;
-}
-
-void Plane::PlaneDist(){
-    dist = dist /2 *0.5;
-}
-
-
-
+void NormalPlane( Plane * plane ){
+};

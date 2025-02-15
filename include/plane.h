@@ -7,6 +7,7 @@ public:
     Plane();
      ~Plane();
 
+     double _norm; double _dist;
 
      int PlaneId_Flag;
      
