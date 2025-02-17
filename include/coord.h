@@ -8,7 +8,7 @@ public:
  Coord();
   ~Coord();
 
-    double m_MinWorldCoord;
-    double m_MaxWorldCoord;
+    double m_MinWorldCoord = +64 * 1024;
+    double m_MaxWorldCoord = -64 * 1024;
 
 };
