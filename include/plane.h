@@ -14,7 +14,7 @@ public:
 
      int PlaneId_Flag;
      
-     virtual void PlanePoints() = 0;
+     virtual void PlanePoints(Plane * plane) = 0;
      virtual void PlaneNormal(Plane * plane) = 0;
      virtual void PlaneDist() = 0;
 

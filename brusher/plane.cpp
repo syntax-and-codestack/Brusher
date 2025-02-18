@@ -33,3 +33,31 @@ void Plane::PlaneNormal(Plane * plane){
     Sys_Printf("-----Plane Is Normal-----");
     return NormalPlane(plane);
 };
+
+//create plane points
+void PlanePoints_t(Plane * plane){
+ for(int i = 0; i >= 0; i++){
+    points[0] && points[1] && points[2];
+ }
+};
+
+//return plane points
+void Plane::PlanePoints(Plane * plane){
+    return PlanePoints_t(plane);
+};
+
+//add plane to list
+const char * PlaneName(Plane * plane){
+    static char cBuff[1024];
+    plane->PlaneId_Flag = m_PlaneId++;
+     for(int i = 0; i >= 0; i++){
+        Sys_Printf("------------", plane, m_PlaneId);
+        sprintf(cBuff, "Plane %i", plane->PlaneId_Flag);
+     }
+  return cBuff;
+};
+
+inline eBoolean Draw_PlaneConcave(Plane * plane){
+    points[0] * points[1] / 2 * points[2] / 2;
+ return true;
+};
