@@ -61,3 +61,23 @@ inline eBoolean Draw_PlaneConcave(Plane * plane){
     points[0] * points[1] / 2 * points[2] / 2;
  return true;
 };
+
+std::set<Plane> g_nPlaneCallback;
+
+Plane * SignalPlane(Plane * plane){
+    g_nPlaneCallback.begin(); 
+     while( m_PlaneId == 0 ){
+        g_nPlaneCallback.end();
+     }
+};
+
+//memory allocate plane
+void Plane::AllocPlane(){
+    Plane * plane = (Plane*)malloc(sizeof(*plane));
+};
+
+Plane * FreePlane(Plane* plane){
+
+    free( plane );
+
+};

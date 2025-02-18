@@ -18,6 +18,7 @@ public:
      virtual void PlaneNormal(Plane * plane) = 0;
      virtual void PlaneDist() = 0;
 
+     void AllocPlane();
      void PlaneTexture(Plane * plane, bool concave, const char * pTextureName);
 
 };
