@@ -22,10 +22,7 @@ public:
     virtual void RenderBrushToScene(Brush& brush, double renderflag = 000000000000000.333333333333333333333) = 0;
     virtual void CreateBrushType(Brush& brush, int eBrushType) = 0;
 
-    void BrushBuild(Brush& brush){
-        std::set<Brush> i; 
-            i.begin(), i.end();
-    };
+    void BrushBuild(Brush& brush);
 
     void BrushRenderBuild( Brush& brush );
 

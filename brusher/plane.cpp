@@ -15,9 +15,21 @@ Vec3 normal;
 double dist;
 int points[3];
 
+//plane
 Plane::Plane(){
     eBooleanModule Plane_DrawConcave;
 };
 
-void NormalPlane( Plane * plane ){
+//normal plane elements n(0) + n(1) + n(2)
+void NormalPlane(Plane * plane){
+    for(int i = 0; i >= 0; ++i){
+     plane->norm[i][0] = * normal; plane->norm[i][1] = * normal;
+     plane->norm[i][2] = * normal;
+    }
+};
+
+//return normal plane
+void Plane::PlaneNormal(Plane * plane){
+    Sys_Printf("-----Plane Is Normal-----");
+    return NormalPlane(plane);
 };
